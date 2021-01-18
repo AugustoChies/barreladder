@@ -11,9 +11,11 @@ public class PlayerMove : MonoBehaviour
     public int highLimit, lowLimit;
     public float speed;
     protected Vector2 vertMmovement;
+    public GlobalStats stats;
     // Start is called before the first frame update
     void Start()
     {
+        stats.SetScrollSpeed(0.0f);
         rb = GetComponent<Rigidbody2D>();
         vertMmovement = Vector2.zero;
         currentPosition = 3;
@@ -48,8 +50,7 @@ public class PlayerMove : MonoBehaviour
         else if (Input.GetKey(KeyCode.S) && rb.position.y > lowLimit)
         {
             vertMmovement.y = -1;
-        }
-
+        }        
     }
 
     private void FixedUpdate()
@@ -64,5 +65,8 @@ public class PlayerMove : MonoBehaviour
         {
             rb.MovePosition(rb.position + (vertMmovement * speed * Time.deltaTime));
         }
+
+        float percentHeight = (rb.position.y - lowLimit) / (highLimit - lowLimit);
+        stats.SetScrollSpeed(percentHeight);
     }
 }
