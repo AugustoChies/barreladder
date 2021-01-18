@@ -23,7 +23,7 @@ public Transform point;
     if (cronometro >= tempo)
          {
 
-        GameObject CloneTiro = Instantiate(barrinha, point.position, point.rotation);
+        GameObject CloneTiro = Instantiate(barrinha, point.position, point.rotation,transform.parent);
         cronometro = 0;     
 
          }

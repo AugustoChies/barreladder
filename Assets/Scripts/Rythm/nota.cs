@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class nota : MonoBehaviour
 {
-    
-    public GameObject canvas;
     public float speed;
     private Animator CAnimation;
     private float timeDestroy;
@@ -27,7 +25,6 @@ public class nota : MonoBehaviour
         //GameObject.Find("barrinha(Clone)").transform.parent = canvas.transform;
         if (gameObject.name == "barrinha(Clone)")
         {
-            transform.SetParent(canvas.transform, false);
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
     }

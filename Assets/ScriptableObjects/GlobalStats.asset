@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7378fefa8c572234995d7f3b121a2335, type: 3}
   m_Name: GlobalStats
   m_EditorClassIdentifier: 
-  scrollSpeed: 1
-  baseAndTopSpeed: {x: 1, y: 10}
+  scrollSpeed: 1.2774997
+  baseAndTopSpeed: {x: 1, y: 2}

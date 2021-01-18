@@ -5,7 +5,10 @@ using UnityEngine;
 public class compasso : MonoBehaviour
 {
     public bool pegou =false;
-    
+    public delegate void PressKey();
+    public PressKey movedSideWays,moved;
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,7 @@ public class compasso : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && pegou == true)
         {
             Debug.Log("ponto");
-            // coloque a ação aqui 
+            movedSideWays();
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && pegou == false)
@@ -29,6 +32,18 @@ public class compasso : MonoBehaviour
 
 
 
+    }
+
+    public void CheckTiming()
+    {
+        if (pegou)
+        {
+            movedSideWays();
+        }
+        else
+        {
+
+        }
     }
 
 

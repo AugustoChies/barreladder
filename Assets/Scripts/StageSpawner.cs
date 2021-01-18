@@ -45,7 +45,7 @@ public class StageSpawner : MonoBehaviour
 
     public void AddSection()
     {
-        activeList.Add(Instantiate(sections.stageSections[nextSection], newSectionPosition, Quaternion.identity));
+        activeList.Add(Instantiate(sections.stageSections[nextSection], activeList[0].transform.position + newSectionPosition, Quaternion.identity));
         nextSection++;        
     }
 }
