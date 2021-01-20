@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class play : MonoBehaviour
 {
+    public GlobalStats stats;
     public GameObject barrinha;
-public Transform point;
-   public float cronometro;
+    public Transform point;
+    public float cronometro;
     public float tempo;
     // Start is called before the first frame update
     void Start()
@@ -18,16 +19,13 @@ public Transform point;
     // Update is called once per frame
     void Update()
     {
-    cronometro += Time.deltaTime;
+         cronometro += Time.deltaTime * stats.scrollSpeed;
 
-    if (cronometro >= tempo)
+         if (cronometro >= tempo)
          {
-
-        GameObject CloneTiro = Instantiate(barrinha, point.position, point.rotation,transform.parent);
-        cronometro = 0;     
-
+                GameObject CloneTiro = Instantiate(barrinha, point.position, point.rotation,transform.parent);
+                cronometro = 0;    
          }
-
 
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class nota : MonoBehaviour
 {
     public float speed;
+    public GlobalStats stats;
     private Animator CAnimation;
     private float timeDestroy;
     
@@ -25,7 +26,7 @@ public class nota : MonoBehaviour
         //GameObject.Find("barrinha(Clone)").transform.parent = canvas.transform;
         if (gameObject.name == "barrinha(Clone)")
         {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            transform.Translate(Vector2.left * speed * stats.scrollSpeed * Time.deltaTime);
         }
     }
 
@@ -34,10 +35,15 @@ public class nota : MonoBehaviour
         
         if (gameObject.name == "barrinha(Clone)")
         {
-            timeDestroy = 0f;
-            Destroy(gameObject, timeDestroy);
+            Delete();
 
         }
+    }
+
+    public void Delete()
+    {
+        timeDestroy = 0f;
+        Destroy(gameObject, timeDestroy);
     }
 
 

@@ -91,8 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da01af954d927d47a97c881eac9441c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
   speed: 80
+  stats: {fileID: 11400000, guid: 6dd3251b2cd95804186ad229e148b751, type: 2}
 --- !u!95 &3015440005637197032
 Animator:
   serializedVersion: 3

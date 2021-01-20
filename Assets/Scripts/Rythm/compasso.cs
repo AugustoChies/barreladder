@@ -5,8 +5,7 @@ using UnityEngine;
 public class compasso : MonoBehaviour
 {
     public bool pegou =false;
-    public delegate void PressKey();
-    public PressKey movedSideWays,moved;
+    protected GameObject activeBar;
    
 
     // Start is called before the first frame update
@@ -18,32 +17,26 @@ public class compasso : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && pegou == true)
-        {
-            Debug.Log("ponto");
-            movedSideWays();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && pegou == false)
-        {
-            Debug.Log("Errou!!");
-            // coloque a ação aqui 
-        }
-
-
-
     }
 
-    public void CheckTiming()
-    {
+    public bool BarFeedBack()
+    {        
         if (pegou)
         {
-            movedSideWays();
+            Debug.Log("ponto");
+            Destroy(activeBar);
+            return true;
         }
         else
         {
+            Debug.Log("Errou!!");
+            return false;
+        }       
+    }
 
-        }
+    public bool CheckTiming()
+    {
+        return pegou;
     }
 
 
@@ -53,7 +46,7 @@ public class compasso : MonoBehaviour
     {
         if (other.tag == "barrinha")
         {
-            
+            activeBar = other.gameObject;
             pegou = true;
         }
 
