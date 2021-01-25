@@ -105,8 +105,13 @@ MonoBehaviour:
   hut5: 0
   hut6: 0
   hut7: 0
+  danger: 0
   Target: {fileID: 0}
-  tiro: {fileID: 0}
+  drink: {fileID: 0}
+  drink2: {fileID: 0}
+  drink3: {fileID: 0}
+  radio: {fileID: 0}
+  disk: {fileID: 0}
   point: {fileID: 896082464311771228}
   TargetDistance: 0
   cronometro: 0
