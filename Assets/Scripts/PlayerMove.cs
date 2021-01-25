@@ -13,18 +13,20 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     protected Vector2 vertMmovement;
     public GlobalStats stats;
-
+    public CanvasController canvas;
     public bool stunned,finished;
     public float stunDuration;
-
+    public float stunPointReduction;
 
     public delegate bool BeatReaction();
     public BeatReaction BeatMovement;
     // Start is called before the first frame update
     void Start()
     {
+        canvas = GameObject.Find("Canvas").GetComponent<CanvasController>();
         BeatMovement += beat.BarFeedBack;
         stats.SetScrollSpeed(0.0f);
+        stats.currentScore = 0;
         rb = GetComponent<Rigidbody2D>();
         vertMmovement = Vector2.zero;
         currentPosition = 3;
@@ -84,7 +86,8 @@ public class PlayerMove : MonoBehaviour
                 move = false;
                 Vector2 newPos = new Vector2(playerPositions[currentPosition].position.x, rb.position.y);
                 rb.MovePosition(newPos);
-                StartCoroutine(StunTimer());
+                stats.ChangePointValue(-stunPointReduction);
+                StartCoroutine(StunTimer());                
             }
         }
         else
@@ -94,6 +97,7 @@ public class PlayerMove : MonoBehaviour
 
         float percentHeight = (rb.position.y - lowLimit) / (highLimit - lowLimit);
         stats.SetScrollSpeed(percentHeight);
+        stats.ChangePointValueDeltaTime(percentHeight);
     }
 
     IEnumerator StunTimer()
@@ -109,7 +113,7 @@ public class PlayerMove : MonoBehaviour
     {
         if(collision.CompareTag("End"))
         {
-            Debug.Log("End");
+            canvas.Finish();
             stats.scrollSpeed = 0;
             finished = true;
         }
