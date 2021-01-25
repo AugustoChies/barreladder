@@ -19,7 +19,7 @@ public class play : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         cronometro += Time.deltaTime * stats.scrollSpeed;
+         cronometro += Time.deltaTime * stats.pitchChange;
 
          if (cronometro >= tempo)
          {

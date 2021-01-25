@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     protected Vector2 vertMmovement;
     public GlobalStats stats;
 
-    public bool stunned;
+    public bool stunned,finished;
     public float stunDuration;
 
 
@@ -35,6 +35,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (finished) return;
         vertMmovement.y = 0;
         if (!stunned)
         {
@@ -68,6 +69,8 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (finished) return;
+
         if (move)
         {
             if (BeatMovement())
@@ -100,5 +103,15 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(stunDuration);
         stunned = false;
         this.GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("End"))
+        {
+            Debug.Log("End");
+            stats.scrollSpeed = 0;
+            finished = true;
+        }
     }
 }
