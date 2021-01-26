@@ -7,7 +7,7 @@ public class StageSpawner : MonoBehaviour
     public int nextSection;
     public StageSections sections;
     public List<GameObject> activeList;
-    public Vector3 newSectionPosition;
+    public Vector3 newSectionPosition,initialPos;
     void Start()
     {
         nextSection = 0;
@@ -18,34 +18,29 @@ public class StageSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(activeList[1].transform.position.y <= this.transform.position.y)
-        {
-            if(nextSection < sections.stageSections.Count)
-            {
-                AddSection();
-                GameObject token = activeList[0];                
-                activeList.RemoveAt(0);
-                Destroy(token);
-            }
+        if(activeList[0].transform.position.y <= -11.5f)
+        {            
+            GameObject token = activeList[0];                
+            activeList.RemoveAt(0);
+            Destroy(token);            
         }
            
     }
 
-    public void StageStart()//Also used when restarting
-    {
-        for (int i = 0; i < activeList.Count; i++)
-        {
-            Destroy(activeList[i]);
-        }
+    public void StageStart()
+    {       
         activeList.Clear();
-        activeList.Add(Instantiate(sections.stageSections[nextSection], Vector3.zero, Quaternion.identity));
+        activeList.Add(Instantiate(sections.stageSections[nextSection],initialPos, Quaternion.identity));
         nextSection++;
-        AddSection();
+        for (int i = 1; i < sections.stageSections.Count; i++)
+        {
+            AddSection();
+        }
     }
 
     public void AddSection()
     {
-        activeList.Add(Instantiate(sections.stageSections[nextSection], activeList[0].transform.position + newSectionPosition, Quaternion.identity));
+        activeList.Add(Instantiate(sections.stageSections[nextSection], activeList[nextSection-1].transform.position + newSectionPosition, Quaternion.identity));
         nextSection++;        
     }
 }

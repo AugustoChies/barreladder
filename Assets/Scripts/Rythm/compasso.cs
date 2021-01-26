@@ -23,13 +23,11 @@ public class compasso : MonoBehaviour
     {        
         if (pegou)
         {
-            Debug.Log("ponto");
             Destroy(activeBar);
             return true;
         }
         else
         {
-            Debug.Log("Errou!!");
             return false;
         }       
     }

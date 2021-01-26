@@ -13,18 +13,20 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     protected Vector2 vertMmovement;
     public GlobalStats stats;
-
-    public bool stunned;
+    public CanvasController canvas;
+    public bool stunned,finished;
     public float stunDuration;
-
+    public float stunPointReduction;
 
     public delegate bool BeatReaction();
     public BeatReaction BeatMovement;
     // Start is called before the first frame update
     void Start()
     {
+        canvas = GameObject.Find("Canvas").GetComponent<CanvasController>();
         BeatMovement += beat.BarFeedBack;
         stats.SetScrollSpeed(0.0f);
+        stats.currentScore = 0;
         rb = GetComponent<Rigidbody2D>();
         vertMmovement = Vector2.zero;
         currentPosition = 3;
@@ -35,6 +37,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (finished) return;
         vertMmovement.y = 0;
         if (!stunned)
         {
@@ -68,6 +71,8 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (finished) return;
+
         if (move)
         {
             if (BeatMovement())
@@ -81,7 +86,8 @@ public class PlayerMove : MonoBehaviour
                 move = false;
                 Vector2 newPos = new Vector2(playerPositions[currentPosition].position.x, rb.position.y);
                 rb.MovePosition(newPos);
-                StartCoroutine(StunTimer());
+                stats.ChangePointValue(-stunPointReduction);
+                StartCoroutine(StunTimer());                
             }
         }
         else
@@ -91,6 +97,7 @@ public class PlayerMove : MonoBehaviour
 
         float percentHeight = (rb.position.y - lowLimit) / (highLimit - lowLimit);
         stats.SetScrollSpeed(percentHeight);
+        stats.ChangePointValueDeltaTime(percentHeight);
     }
 
     IEnumerator StunTimer()
@@ -100,5 +107,15 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(stunDuration);
         stunned = false;
         this.GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("End"))
+        {
+            canvas.Finish();
+            stats.scrollSpeed = 0;
+            finished = true;
+        }
     }
 }
