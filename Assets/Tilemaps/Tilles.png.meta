@@ -1,0 +1,824 @@
+fileFormatVersion: 2
+guid: ed5d973151a568145b771ca53594f8a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1932002337122165900
+    second: Tilles_0
+  - first:
+      213: 8932960366091890774
+    second: Tilles_1
+  - first:
+      213: 4873719579296625514
+    second: Tilles_2
+  - first:
+      213: 3634586397081298519
+    second: Tilles_3
+  - first:
+      213: -1301448234400829959
+    second: Tilles_4
+  - first:
+      213: -808472115684494933
+    second: Tilles_5
+  - first:
+      213: -5845749655016508573
+    second: Tilles_6
+  - first:
+      213: 4253335269329195115
+    second: Tilles_7
+  - first:
+      213: 5082473876918756819
+    second: Tilles_8
+  - first:
+      213: 5438525345601195887
+    second: Tilles_9
+  - first:
+      213: 9159650431193177351
+    second: Tilles_10
+  - first:
+      213: -1013390225092597533
+    second: Tilles_11
+  - first:
+      213: 948797454394795777
+    second: Tilles_12
+  - first:
+      213: 686118733027797474
+    second: Tilles_13
+  - first:
+      213: -8916917526464061259
+    second: Tilles_14
+  - first:
+      213: -229464617220566829
+    second: Tilles_15
+  - first:
+      213: -4096546649622500168
+    second: Tilles_16
+  - first:
+      213: -6092472441882531502
+    second: Tilles_17
+  - first:
+      213: -3108801199824216401
+    second: Tilles_18
+  - first:
+      213: -2531040658469860633
+    second: Tilles_19
+  - first:
+      213: -4670329023147191376
+    second: Tilles_20
+  - first:
+      213: 2570429563256773053
+    second: Tilles_21
+  - first:
+      213: 8283277011461134599
+    second: Tilles_22
+  - first:
+      213: -8648057996017580754
+    second: Tilles_23
+  - first:
+      213: -250262672027786121
+    second: Tilles_24
+  - first:
+      213: 4218444346116972240
+    second: Tilles_25
+  - first:
+      213: -9052684653719627967
+    second: Tilles_26
+  - first:
+      213: -3680538577810957075
+    second: Tilles_27
+  - first:
+      213: 6459835126526439107
+    second: Tilles_28
+  - first:
+      213: 3239693087003621142
+    second: Tilles_29
+  - first:
+      213: 2639929751284167771
+    second: Tilles_30
+  - first:
+      213: -8318611162571070828
+    second: Tilles_31
+  - first:
+      213: -4691733429525208968
+    second: Tilles_32
+  - first:
+      213: -1726490292577875550
+    second: Tilles_33
+  - first:
+      213: -7653964744094033072
+    second: Tilles_34
+  - first:
+      213: 2840711772617213536
+    second: Tilles_35
+  - first:
+      213: -4054232785860722237
+    second: Tilles_36
+  - first:
+      213: -2208610379816092790
+    second: Tilles_37
+  - first:
+      213: 5648091695808298055
+    second: Tilles_38
+  - first:
+      213: -4983841811542104952
+    second: Tilles_39
+  - first:
+      213: 6216191765963033618
+    second: Tilles_40
+  - first:
+      213: -4558361142354659699
+    second: Tilles_41
+  - first:
+      213: 2694229320933483358
+    second: Tilles_42
+  - first:
+      213: -6783702561057873327
+    second: Tilles_43
+  - first:
+      213: 6102225499044438622
+    second: Tilles_44
+  - first:
+      213: -2779176612606476274
+    second: Tilles_45
+  - first:
+      213: -3452918133574184977
+    second: Tilles_46
+  - first:
+      213: -7306655426222886825
+    second: Tilles_47
+  - first:
+      213: -546219197891614708
+    second: Tilles_48
+  - first:
+      213: 2983966166347373591
+    second: Tilles_49
+  - first:
+      213: -3462092851671711786
+    second: Tilles_50
+  - first:
+      213: -2726693290017490638
+    second: Tilles_51
+  - first:
+      213: -2746683129199294630
+    second: Tilles_52
+  - first:
+      213: 5807502095977990168
+    second: Tilles_53
+  - first:
+      213: -8450709380245448118
+    second: Tilles_54
+  - first:
+      213: 8831144154422227690
+    second: Tilles_55
+  - first:
+      213: -1219681605010482885
+    second: Tilles_56
+  - first:
+      213: 5415533073708942410
+    second: Tilles_57
+  - first:
+      213: -8138458088728898225
+    second: Tilles_58
+  - first:
+      213: 1154037644697234877
+    second: Tilles_59
+  - first:
+      213: 4490134926270697008
+    second: Tilles_60
+  - first:
+      213: -3653756535594384005
+    second: Tilles_61
+  - first:
+      213: -7102950048601908982
+    second: Tilles_62
+  - first:
+      213: -1535621645541756027
+    second: Tilles_63
+  - first:
+      213: -8068002741088416718
+    second: Tilles_64
+  - first:
+      213: 7525056244198633355
+    second: Tilles_65
+  - first:
+      213: -3809725052305096876
+    second: Tilles_66
+  - first:
+      213: -6249737342298523184
+    second: Tilles_67
+  - first:
+      213: 8872671125252760643
+    second: Tilles_68
+  - first:
+      213: 4179498237419132721
+    second: Tilles_69
+  - first:
+      213: -3240865261896296381
+    second: Tilles_70
+  - first:
+      213: 5219982832195790691
+    second: Tilles_71
+  - first:
+      213: -549377971916278291
+    second: Tilles_72
+  - first:
+      213: -1586297232960211377
+    second: Tilles_73
+  - first:
+      213: -5508675988262315557
+    second: Tilles_74
+  - first:
+      213: -4079079584612156
+    second: Tilles_75
+  - first:
+      213: 2281051886919033831
+    second: Tilles_76
+  - first:
+      213: 4807184303686663225
+    second: Tilles_77
+  - first:
+      213: 5792563638770028126
+    second: Tilles_78
+  - first:
+      213: 3628268498503048408
+    second: Tilles_79
+  - first:
+      213: -4343668240695371412
+    second: Tilles_80
+  - first:
+      213: 5635519515031572641
+    second: Tilles_81
+  - first:
+      213: 6985377973531771244
+    second: Tilles_82
+  - first:
+      213: -2940139066404397861
+    second: Tilles_83
+  - first:
+      213: -3426351762816557205
+    second: Tilles_84
+  - first:
+      213: -522645731447054793
+    second: Tilles_85
+  - first:
+      213: -1965981162800683535
+    second: Tilles_86
+  - first:
+      213: -6956983815948204925
+    second: Tilles_87
+  - first:
+      213: 2400985591790895746
+    second: Tilles_88
+  - first:
+      213: 1998869265861807675
+    second: Tilles_89
+  - first:
+      213: 6064265753752854270
+    second: Tilles_90
+  - first:
+      213: 7460865371078611551
+    second: Tilles_91
+  - first:
+      213: 2389547349658152980
+    second: Tilles_92
+  - first:
+      213: 6887373520882404850
+    second: Tilles_93
+  - first:
+      213: 6055193194616715446
+    second: Tilles_94
+  - first:
+      213: -8131021559229229625
+    second: Tilles_95
+  - first:
+      213: -7170495655115365894
+    second: Tilles_96
+  - first:
+      213: 957000266372541268
+    second: Tilles_97
+  - first:
+      213: 6670087382469188898
+    second: Tilles_98
+  - first:
+      213: -5466937411138958655
+    second: Tilles_99
+  - first:
+      213: -4934226494187523843
+    second: Tilles_100
+  - first:
+      213: 580896398368479432
+    second: Tilles_101
+  - first:
+      213: -7386476651046688361
+    second: Tilles_102
+  - first:
+      213: 5068283160346085180
+    second: Tilles_103
+  - first:
+      213: -2497379313532465650
+    second: Tilles_104
+  - first:
+      213: 5643107554587531602
+    second: Tilles_105
+  - first:
+      213: -8751881115518657603
+    second: Tilles_106
+  - first:
+      213: -2572414160844841474
+    second: Tilles_107
+  - first:
+      213: -113653020229198997
+    second: Tilles_108
+  - first:
+      213: -6007888838432804741
+    second: Tilles_109
+  - first:
+      213: 6056535564979895412
+    second: Tilles_110
+  - first:
+      213: -6711053441757138262
+    second: Tilles_111
+  - first:
+      213: -327108370201532229
+    second: Tilles_112
+  - first:
+      213: 4362619407946112776
+    second: Tilles_113
+  - first:
+      213: -3987747853460035006
+    second: Tilles_114
+  - first:
+      213: 6223806382708954707
+    second: Tilles_115
+  - first:
+      213: -3058668183358200670
+    second: Tilles_116
+  - first:
+      213: 6592459743361590356
+    second: Tilles_117
+  - first:
+      213: 5055243533572964840
+    second: Tilles_118
+  - first:
+      213: -6474880178304391030
+    second: Tilles_119
+  - first:
+      213: -657731415537627905
+    second: Tilles_120
+  - first:
+      213: -1658687076733242215
+    second: Tilles_121
+  - first:
+      213: -2931102276987466959
+    second: Tilles_122
+  - first:
+      213: -8404823626479899412
+    second: Tilles_123
+  - first:
+      213: 3425068184348348847
+    second: Tilles_124
+  - first:
+      213: 9161072637800734234
+    second: Tilles_125
+  - first:
+      213: 2651671146800818665
+    second: Tilles_126
+  - first:
+      213: 5694759942833338658
+    second: Tilles_127
+  - first:
+      213: -7385826695330451677
+    second: Tilles_128
+  - first:
+      213: -1259851048305696925
+    second: Tilles_129
+  - first:
+      213: 7706856792132035107
+    second: Tilles_130
+  - first:
+      213: 5613159594058345203
+    second: Tilles_131
+  - first:
+      213: -2668104709320375570
+    second: Tilles_132
+  - first:
+      213: -2269814737329370802
+    second: Tilles_133
+  - first:
+      213: 3251478549472130098
+    second: Tilles_134
+  - first:
+      213: 4434527774420064313
+    second: Tilles_135
+  - first:
+      213: 2854619419018191181
+    second: Tilles_136
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tilles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c842461b3e9dfca10800000000000000
+      internalID: 1932002337122165900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650fc85cf1048fb70800000000000000
+      internalID: 8932960366091890774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6377d2a22ee2a340800000000000000
+      internalID: 4873719579296625514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7566f7f3215a07230800000000000000
+      internalID: 3634586397081298519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdaaf6e9b350fde0800000000000000
+      internalID: -1301448234400829959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba131dde4eab7c4f0800000000000000
+      internalID: -808472115684494933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363f0ee29a9bfdea0800000000000000
+      internalID: -5845749655016508573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60d10f64e1e60b30800000000000000
+      internalID: 4253335269329195115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5e1fd1013988640800000000000000
+      internalID: 5082473876918756819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f848ebcf5897b40800000000000000
+      internalID: 5438525345601195887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dd50a898d9d1f70800000000000000
+      internalID: 9159650431193177351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8a08e95f6bfe1f0800000000000000
+      internalID: -1013390225092597533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilles_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1072ff0024eca2d00800000000000000
+      internalID: 948797454394795777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
