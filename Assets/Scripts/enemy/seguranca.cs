@@ -26,7 +26,7 @@ public class seguranca : MonoBehaviour
     public GameObject drink3;
     public GameObject radio;
     public GameObject disk;
-
+    public GameObject vase;
     public Transform point;
     public float TargetDistance = 5;
     public float cronometro;
@@ -63,6 +63,14 @@ public class seguranca : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        if (GameObject.Find("Player").GetComponent<PlayerMove>().finished == true)
+        {
+            cronometro = 0;
+            CAnimation.SetBool("shot", false);
+            TargetDistance = 100;
+        }
         cronometro += Time.deltaTime;
         if (cronometro >= tempo) { notas(); }
 
@@ -132,7 +140,7 @@ public class seguranca : MonoBehaviour
 
     public void tiros()
     {
-        switch (Random.Range(0, 8))
+        switch (Random.Range(0, 7))
         {
 
 
@@ -164,6 +172,11 @@ public class seguranca : MonoBehaviour
             case 5:
 
                 shot(disk);
+
+                break;
+            case 6:
+
+                shot(vase);
 
                 break;
         }
@@ -623,7 +636,7 @@ public class seguranca : MonoBehaviour
         void shot(GameObject tiro)
 
         {
-            GameObject CloneTiro1 = Instantiate(tiro, point.position, point.rotation);
+             Instantiate(tiro, point.position, point.rotation);
 
 
         }

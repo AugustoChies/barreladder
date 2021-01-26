@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2594775431975087858}
   - component: {fileID: 2594775431975087857}
   - component: {fileID: 4588069887070500834}
+  - component: {fileID: 1301980239345893682}
   m_Layer: 0
   m_Name: disk
   m_TagString: Untagged
@@ -117,3 +118,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1301980239345893682
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2594775431975087856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.016894221, y: -0.04899347}
+  serializedVersion: 2
+  m_Radius: 0.42544186
