@@ -68,6 +68,10 @@ public class PlayerMove : MonoBehaviour
                 vertMmovement.y = -1;
             }
         }
+        if (stats.drunkness > 0)
+        {
+            stats.drunkness -= alcoolDecreasePS * Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()

@@ -219,5 +219,4 @@ MonoBehaviour:
   finished: 0
   stunDuration: 2
   stunPointReduction: 50
-  alcoolDecreasePS: 0
-  other: {fileID: 0}
+  alcoolDecreasePS: 1

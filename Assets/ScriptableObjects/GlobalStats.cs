@@ -9,7 +9,7 @@ public class GlobalStats : ScriptableObject
     public Vector2 baseandTopPitch;
     public Vector2 baseandTopPointGain;
     public Vector2 scoreBarrier;
-    public int drunkness;
+    public float drunkness;
     public float currentScore,scorevariation;
 
 
