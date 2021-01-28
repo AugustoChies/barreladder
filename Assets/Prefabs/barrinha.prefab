@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4524744643956586048}
   - component: {fileID: 19900079336062515}
   - component: {fileID: 2379273521258238719}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: barrinha (1)
   m_TagString: barrinha
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3015440005637197032}
   - component: {fileID: 3015440005637197028}
   - component: {fileID: 3015440005637197029}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: barrinha
   m_TagString: barrinha
   m_Icon: {fileID: 0}

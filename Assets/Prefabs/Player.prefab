@@ -153,7 +153,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   highLimit: 4
-  lowLimit: -2
+  lowLimit: -4
   speed: 3
   stats: {fileID: 11400000, guid: 6dd3251b2cd95804186ad229e148b751, type: 2}
   canvas: {fileID: 0}

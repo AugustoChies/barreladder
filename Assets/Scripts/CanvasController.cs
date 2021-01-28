@@ -10,7 +10,7 @@ public class CanvasController : MonoBehaviour
     public GameObject endPanel;
     public List<Image> stars;
     public GlobalStats stats;
-    public TextMeshProUGUI pointtext;
+    public TextMeshProUGUI pointtext,multipliertxt;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,8 @@ public class CanvasController : MonoBehaviour
     private void Update()
     {
         pointtext.text = ""+ (int)stats.currentScore;
+        multipliertxt.text = "x" + stats.scorevariation.ToString("F1");
+
     }
 
     public void Finish()

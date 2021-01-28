@@ -9,7 +9,8 @@ public class GlobalStats : ScriptableObject
     public Vector2 baseandTopPitch;
     public Vector2 baseandTopPointGain;
     public Vector2 scoreBarrier;
-    public float currentScore;
+    public float currentScore,scorevariation;
+
 
     public void SetScrollSpeed(float percent)
     {
@@ -23,6 +24,7 @@ public class GlobalStats : ScriptableObject
     {
         float variation = baseandTopPointGain.y - baseandTopPointGain.x;
         currentScore += (baseandTopPointGain.x + variation * percent) * Time.deltaTime;
+        scorevariation = (baseandTopPointGain.x + variation * percent)/ baseandTopPointGain.x;
     }
 
     public void ChangePointValue(float value)
