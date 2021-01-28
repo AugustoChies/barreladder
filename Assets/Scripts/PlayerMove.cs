@@ -100,7 +100,7 @@ public class PlayerMove : MonoBehaviour
         stats.ChangePointValueDeltaTime(percentHeight);
     }
 
-    IEnumerator StunTimer()
+    public IEnumerator StunTimer()
     {
         stunned = true;
         this.GetComponent<SpriteRenderer>().color = Color.red;
