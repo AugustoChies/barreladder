@@ -183,7 +183,8 @@ public class PlayerMove : MonoBehaviour
         }
         else if(collision.CompareTag("disk"))
         {
-            stats.ChangePointValueDeltaTime(percentHeight * collision.GetComponent<random>().alcool);
+
+            stats.ChangePointValue(collision.GetComponent<random>().alcool);
 
         }
 
