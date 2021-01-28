@@ -59,7 +59,7 @@ public class random : MonoBehaviour
             float timeDestroy = 0;
             Destroy(gameObject, timeDestroy);
 
-            GameObject.Find("Player").GetComponent<PlayerMove>().StunTimer();
+           
         }
 
 
