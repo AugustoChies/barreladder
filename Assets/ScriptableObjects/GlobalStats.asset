@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7378fefa8c572234995d7f3b121a2335, type: 3}
   m_Name: GlobalStats
   m_EditorClassIdentifier: 
-  scrollSpeed: 1.2499999
-  pitchChange: 1.0375
-  baseAndTopSpeed: {x: 1, y: 2}
+  scrollSpeed: 1.4166385
+  pitchChange: 0.9916639
+  baseAndTopSpeed: {x: 1.5, y: 3}
   baseandTopPitch: {x: 1, y: 1.15}
   baseandTopPointGain: {x: 5, y: 15}
   scoreBarrier: {x: 300, y: 600}
-  currentScore: 720.943
+  drunkness: 0
+  currentScore: 10.646435
+  scorevariation: 0.8888513

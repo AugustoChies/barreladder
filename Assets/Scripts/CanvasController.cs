@@ -7,15 +7,17 @@ using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
 {
-    public GameObject endPanel;
+    public GameObject endPanel, drunkPanel, notPanel;
     public List<Image> stars;
     public GlobalStats stats;
     public TextMeshProUGUI pointtext,multipliertxt;
     public Image drunkBar;
-    
+    bool lost;
 
     private void Update()
     {
+        if (lost) return;
+
         pointtext.text = ""+ (int)stats.currentScore;
         multipliertxt.text = "x" + stats.scorevariation.ToString("F1");
         drunkBar.fillAmount = stats.drunkness / 100.0f;
@@ -33,6 +35,18 @@ public class CanvasController : MonoBehaviour
         {
             stars[2].enabled = true;
         }
+    }
+
+    public void Drunk()
+    {
+        lost = true;
+        drunkPanel.SetActive(true);
+    }
+
+    public void NotDrunk()
+    {
+        lost = true;
+        notPanel.SetActive(true);
     }
 
     public void Restart()

@@ -69,6 +69,12 @@ public class PlayerMove : MonoBehaviour
                 vertMmovement.y = -1;
             }
         }
+        if (stats.drunkness >= 100)
+        {
+            canvas.Drunk();
+            stats.scrollSpeed = 0;
+            finished = true;
+        }
         if (stats.drunkness > 0)
         {
             stats.drunkness -= alcoolDecreasePS * Time.deltaTime;
@@ -124,9 +130,18 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.CompareTag("End"))
         {
-            canvas.Finish();
-            stats.scrollSpeed = 0;
-            finished = true;
+            if (stats.drunkness < 50)
+            {
+                canvas.NotDrunk();
+                stats.scrollSpeed = 0;
+                finished = true;
+            }
+            else
+            {
+                canvas.Finish();
+                stats.scrollSpeed = 0;
+                finished = true;
+            }            
         }      
         if (collision.CompareTag("drink"))
         {
