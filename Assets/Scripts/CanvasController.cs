@@ -19,7 +19,7 @@ public class CanvasController : MonoBehaviour
 
     private void Update()
     {
-        pointtext.text = "POINTS: " + (int)stats.currentScore;
+        pointtext.text = ""+ (int)stats.currentScore;
     }
 
     public void Finish()

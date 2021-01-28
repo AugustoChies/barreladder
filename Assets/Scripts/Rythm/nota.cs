@@ -14,20 +14,12 @@ public class nota : MonoBehaviour
     void Start()
     {
         CAnimation = GetComponent<Animator>();
-        CAnimation.SetBool("batida", true);
-        // GameObject.Find("barrinha(Clone)").transform.parent = canvas.transform;
-        //barrinha.transform.SetParent(canvas);
-
-        
+        CAnimation.SetBool("batida", true);     
     }
 
     void Update()
-    {
-        //GameObject.Find("barrinha(Clone)").transform.parent = canvas.transform;
-        if (gameObject.name == "barrinha(Clone)")
-        {
-            transform.Translate(Vector2.left * speed * stats.scrollSpeed * Time.deltaTime);
-        }
+    {        
+        transform.Translate(Vector2.down * speed * Time.deltaTime);        
     }
 
     void OnCollisionEnter2D(Collision2D collision)

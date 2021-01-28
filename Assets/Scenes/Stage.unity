@@ -519,6 +519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DJ (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 896082464311771233, guid: 85d884955eb6b9742bbb8836f50a4f49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85d884955eb6b9742bbb8836f50a4f49, type: 3}
 --- !u!1 &944288367
@@ -734,6 +739,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DJ
       objectReference: {fileID: 0}
+    - target: {fileID: 896082464311771233, guid: 85d884955eb6b9742bbb8836f50a4f49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85d884955eb6b9742bbb8836f50a4f49, type: 3}
 --- !u!1 &1367629568
@@ -748,8 +758,8 @@ GameObject:
   - component: {fileID: 1367629570}
   - component: {fileID: 1367629569}
   - component: {fileID: 1367629572}
-  - component: {fileID: 1367629574}
   - component: {fileID: 1367629573}
+  - component: {fileID: 1367629574}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
