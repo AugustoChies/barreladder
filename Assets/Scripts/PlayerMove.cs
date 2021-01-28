@@ -20,6 +20,7 @@ public class PlayerMove : MonoBehaviour
     public float alcoolDecreasePS;
     public delegate bool BeatReaction();
     public BeatReaction BeatMovement;
+    private float percentHeight;
     // Start is called before the first frame update
     void Start()
     {
@@ -100,7 +101,7 @@ public class PlayerMove : MonoBehaviour
             rb.MovePosition(rb.position + (vertMmovement * speed * Time.deltaTime));
         }
 
-        float percentHeight = (rb.position.y - lowLimit) / (highLimit - lowLimit);
+         percentHeight = (rb.position.y - lowLimit) / (highLimit - lowLimit);
         stats.SetScrollSpeed(percentHeight);
         stats.ChangePointValueDeltaTime(percentHeight);
     }
@@ -131,6 +132,19 @@ public class PlayerMove : MonoBehaviour
         {
             stats.drunkness += (int)collision.GetComponent<random>().alcool;
         }
+        
+        if (collision.CompareTag("radio"))
+        {
+            stats.ChangePointValueDeltaTime(percentHeight * collision.GetComponent<random>().alcool);
+
+        }
+        if (collision.CompareTag("disk"))
+        {
+            stats.ChangePointValueDeltaTime(percentHeight * collision.GetComponent<random>().alcool);
+
+        }
+
+
     }
   
 }

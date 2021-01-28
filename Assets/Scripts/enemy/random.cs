@@ -5,6 +5,7 @@ using UnityEngine;
 public class random : MonoBehaviour
 {
     public float alcool;
+    public float bonus;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,8 @@ public class random : MonoBehaviour
             {
                 float timeDestroy = 0;
                 Destroy(gameObject, timeDestroy);
+
+
             }
             if (gameObject.name == "disk(Clone)")
             {

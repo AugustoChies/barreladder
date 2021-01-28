@@ -10,6 +10,8 @@ TagManager:
   - End
   - vase
   - drink
+  - disk
+  - radio
   layers:
   - Default
   - TransparentFX
