@@ -12,6 +12,7 @@ TagManager:
   - drink
   - disk
   - radio
+  - Obstacle
   layers:
   - Default
   - TransparentFX

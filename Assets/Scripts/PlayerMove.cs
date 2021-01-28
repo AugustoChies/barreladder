@@ -21,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     public delegate bool BeatReaction();
     public BeatReaction BeatMovement;
     private float percentHeight;
+    bool IFrames;
     // Start is called before the first frame update
     void Start()
     {
@@ -114,7 +115,8 @@ public class PlayerMove : MonoBehaviour
 
     public void ExternalStun()
     {
-        StartCoroutine(StunTimer());
+        if(!IFrames)
+            StartCoroutine(StunTimer());
     }
 
     public IEnumerator StunTimer()
@@ -124,6 +126,27 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(stunDuration);
         stunned = false;
         this.GetComponent<SpriteRenderer>().color = Color.white;
+        StartCoroutine(IFramesCounter());
+    }
+
+    IEnumerator IFramesCounter()
+    {
+        IFrames = true;
+        float spriteBlinkInterval = 0.15f;
+        float timer = 0;
+        SpriteRenderer rend = this.GetComponent<SpriteRenderer>();
+        for (float i = 0; i < stunDuration; i+= Time.deltaTime)
+        {
+            timer += Time.deltaTime;
+            if(timer > spriteBlinkInterval)
+            {
+                rend.enabled = !rend.enabled;
+                timer = 0;                
+            }
+            yield return null;
+        }
+        IFrames = false;
+        rend.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -142,18 +165,23 @@ public class PlayerMove : MonoBehaviour
                 stats.scrollSpeed = 0;
                 finished = true;
             }            
-        }      
-        if (collision.CompareTag("drink"))
+        }
+        else if (collision.CompareTag("Obstacle"))
+        {
+            if(!IFrames)
+                StartCoroutine(StunTimer());
+        }
+        else if (collision.CompareTag("drink"))
         {
             stats.drunkness += (int)collision.GetComponent<random>().alcool;
         }
-        
-        if (collision.CompareTag("radio"))
+
+        else if(collision.CompareTag("radio"))
         {
             stats.ChangePointValueDeltaTime(percentHeight * collision.GetComponent<random>().alcool);
 
         }
-        if (collision.CompareTag("disk"))
+        else if(collision.CompareTag("disk"))
         {
             stats.ChangePointValueDeltaTime(percentHeight * collision.GetComponent<random>().alcool);
 
