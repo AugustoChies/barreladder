@@ -570,6 +570,7 @@ MonoBehaviour:
   stats: {fileID: 11400000, guid: 6dd3251b2cd95804186ad229e148b751, type: 2}
   pointtext: {fileID: 3835862835340497397}
   multipliertxt: {fileID: 228413624382951160}
+  drunkBar: {fileID: 6935230050015255448}
 --- !u!1 &3559952870777181079
 GameObject:
   m_ObjectHideFlags: 0

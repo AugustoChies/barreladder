@@ -17,10 +17,9 @@ public class PlayerMove : MonoBehaviour
     public bool stunned,finished;
     public float stunDuration;
     public float stunPointReduction;
-    public float alcoolcont;
+    public float alcoolDecreasePS;
     public delegate bool BeatReaction();
     public BeatReaction BeatMovement;
-    public Collider2D other;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +27,7 @@ public class PlayerMove : MonoBehaviour
         BeatMovement += beat.BarFeedBack;
         stats.SetScrollSpeed(0.0f);
         stats.currentScore = 0;
+        stats.drunkness = 0;
         rb = GetComponent<Rigidbody2D>();
         vertMmovement = Vector2.zero;
         currentPosition = 3;
@@ -101,6 +101,11 @@ public class PlayerMove : MonoBehaviour
         stats.ChangePointValueDeltaTime(percentHeight);
     }
 
+    public void ExternalStun()
+    {
+        StartCoroutine(StunTimer());
+    }
+
     public IEnumerator StunTimer()
     {
         stunned = true;
@@ -117,15 +122,11 @@ public class PlayerMove : MonoBehaviour
             canvas.Finish();
             stats.scrollSpeed = 0;
             finished = true;
+        }      
+        if (collision.CompareTag("drink"))
+        {
+            stats.drunkness += (int)collision.GetComponent<random>().alcool;
         }
-    
-   
-
-
-
-        
-        if (other.CompareTag("drink"))
-        { alcoolcont = alcoolcont + collision.GetComponent<random>().alcool; }
     }
   
 }

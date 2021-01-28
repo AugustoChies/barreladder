@@ -27,40 +27,41 @@ public class random : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (gameObject.name == "drink(Clone)")
+        if (other.gameObject.CompareTag("Player"))
         {
-            float timeDestroy = 0;
-            Destroy(gameObject, timeDestroy);
-        }
+            if (gameObject.name == "drink(Clone)")
+            {
+                float timeDestroy = 0;
+                Destroy(gameObject, timeDestroy);
+            }
 
-        if (gameObject.name == "drink2(Clone)")
-        {
-            float timeDestroy = 0;
-            Destroy(gameObject, timeDestroy);
-        }
-        if (gameObject.name == "drink3(Clone)")
-        {
-            float timeDestroy = 0;
-            Destroy(gameObject, timeDestroy);
-        }
-        if (gameObject.name == "radio(Clone)")
-        {
-            float timeDestroy = 0;
-            Destroy(gameObject, timeDestroy);
-        }
-        if (gameObject.name == "disk(Clone)")
-        {
-            float timeDestroy = 0;
-            Destroy(gameObject, timeDestroy);
-        }
+            if (gameObject.name == "drink2(Clone)")
+            {
+                float timeDestroy = 0;
+                Destroy(gameObject, timeDestroy);
+            }
+            if (gameObject.name == "drink3(Clone)")
+            {
+                float timeDestroy = 0;
+                Destroy(gameObject, timeDestroy);
+            }
+            if (gameObject.name == "radio(Clone)")
+            {
+                float timeDestroy = 0;
+                Destroy(gameObject, timeDestroy);
+            }
+            if (gameObject.name == "disk(Clone)")
+            {
+                float timeDestroy = 0;
+                Destroy(gameObject, timeDestroy);
+            }
 
-        if (gameObject.name == "vase(Clone)")
-        {
-            float timeDestroy = 0;
-            Destroy(gameObject, timeDestroy);
-            this.transform.Find("Player").GetComponent<PlayerMove>().StunTimer();
-
-
+            if (gameObject.name == "vase(Clone)")
+            {
+                float timeDestroy = 0;
+                Destroy(gameObject, timeDestroy);
+                other.gameObject.GetComponent<PlayerMove>().ExternalStun();
+            }
         }
 
 

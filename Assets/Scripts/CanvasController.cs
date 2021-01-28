@@ -11,17 +11,14 @@ public class CanvasController : MonoBehaviour
     public List<Image> stars;
     public GlobalStats stats;
     public TextMeshProUGUI pointtext,multipliertxt;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Image drunkBar;
+    
 
     private void Update()
     {
         pointtext.text = ""+ (int)stats.currentScore;
         multipliertxt.text = "x" + stats.scorevariation.ToString("F1");
-
+        drunkBar.fillAmount = stats.drunkness / 100.0f;
     }
 
     public void Finish()
