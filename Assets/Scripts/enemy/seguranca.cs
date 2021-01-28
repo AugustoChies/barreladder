@@ -140,7 +140,7 @@ public class seguranca : MonoBehaviour
 
     public void tiros()
     {
-        switch (Random.Range(0, 7))
+        switch (Random.Range(0, 6))
         {
 
 
@@ -206,7 +206,7 @@ public class seguranca : MonoBehaviour
                     hut4 = false;
                     hut5 = false;
                     hut6 = false;
-                    hut7 = false;
+                    
                     cronometro = 0;
 
                     break;
@@ -220,7 +220,7 @@ public class seguranca : MonoBehaviour
                     hut4 = false;
                     hut5 = false;
                     hut6 = false;
-                    hut7 = false;
+                    
                     cronometro = 0;
 
                     break;
@@ -233,7 +233,7 @@ public class seguranca : MonoBehaviour
                     hut4 = false;
                     hut5 = false;
                     hut6 = false;
-                    hut7 = false;
+                    
                     cronometro = 0;
 
 
@@ -246,7 +246,7 @@ public class seguranca : MonoBehaviour
                     hut = false;
                     hut5 = false;
                     hut6 = false;
-                    hut7 = false;
+                    
                     cronometro = 0;
 
 
@@ -260,7 +260,7 @@ public class seguranca : MonoBehaviour
                     hut4 = false;
                     hut = false;
                     hut6 = false;
-                    hut7 = false;
+                    
                     cronometro = 0;
 
                     break;
@@ -273,23 +273,11 @@ public class seguranca : MonoBehaviour
                     hut4 = false;
                     hut5 = false;
                     hut = false;
-                    hut7 = false;
+                   
                     cronometro = 0;
 
                     break;
-                case 7:
-
-                    hut7 = true;
-                    hut2 = false;
-                    hut3 = false;
-                    hut4 = false;
-                    hut5 = false;
-                    hut6 = false;
-                    hut = false;
-                    cronometro = 0;
-
-
-                    break;
+            
 
 
 

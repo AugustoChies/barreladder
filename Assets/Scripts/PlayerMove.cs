@@ -17,9 +17,10 @@ public class PlayerMove : MonoBehaviour
     public bool stunned,finished;
     public float stunDuration;
     public float stunPointReduction;
-
+    public float alcoolcont;
     public delegate bool BeatReaction();
     public BeatReaction BeatMovement;
+    public Collider2D other;
     // Start is called before the first frame update
     void Start()
     {
@@ -111,11 +112,20 @@ public class PlayerMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("End"))
+        if (collision.CompareTag("End"))
         {
             canvas.Finish();
             stats.scrollSpeed = 0;
             finished = true;
         }
+    
+   
+
+
+
+        
+        if (other.CompareTag("drink"))
+        { alcoolcont = alcoolcont + collision.GetComponent<random>().alcool; }
     }
+  
 }

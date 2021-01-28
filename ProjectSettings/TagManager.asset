@@ -8,6 +8,8 @@ TagManager:
   - barrinha
   - ritimoB
   - End
+  - vase
+  - drink
   layers:
   - Default
   - TransparentFX
