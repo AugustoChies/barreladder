@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2633608245392716341}
   - component: {fileID: 2633608245392716340}
-  - component: {fileID: 2633608245392716343}
   - component: {fileID: 7358070805430720751}
+  - component: {fileID: 6733591984223581459}
   - component: {fileID: 8013741360112762475}
   m_Layer: 0
   m_Name: radio
@@ -55,18 +55,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2633608245392716343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633608245392716342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91ce30e0f70c19646b6fd58593e36df3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &7358070805430720751
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -118,6 +106,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6733591984223581459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633608245392716342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ce30e0f70c19646b6fd58593e36df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alcool: 0
 --- !u!61 &8013741360112762475
 BoxCollider2D:
   m_ObjectHideFlags: 0
